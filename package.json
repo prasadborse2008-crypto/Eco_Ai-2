@@ -1,0 +1,27 @@
+{
+  "name": "eco-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EcoAI — AI for Sustainability. Intelligent environmental impact analytics, carbon calculation, AI advisory, waste scanner, and impact simulator.",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "build": "cd server && npm run build && cd ../client && npm run build",
+    "start": "cd server && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "sustainability",
+    "ai",
+    "carbon-calculator",
+    "climate-tech",
+    "gemini",
+    "hackathon"
+  ],
+  "author": "EcoAI Team",
+  "license": "MIT"
+}
